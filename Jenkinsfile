@@ -2,14 +2,11 @@
 
 node('built-in')
 {
-    stage('ContDownload')
+    stage('ContDownload_Loans')
     {
         cicd.newDownload("maven.git")
     }
-    stage('ContBuild')
-    {
-        cicd.newBuild()
-    }
-    
+   
+        
 }  
        
